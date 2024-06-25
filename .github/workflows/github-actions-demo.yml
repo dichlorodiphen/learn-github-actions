@@ -52,5 +52,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: secret-script.sh
+      - name: add back execute perms
+        run: chmod +x ./secret-script.sh
       - name: now execute it
         run: ./secret-script.sh
