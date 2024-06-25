@@ -27,3 +27,17 @@ jobs:
         run: cargo run
         env:
           SOME_ENV_VAR: hey you found it. nice.
+  execute-secret-script:
+    name: execute the super secret script
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./bin
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+      - name: List the scripts directory
+        run: ls
+      - name: Execute the super secret script
+        run: ./secret-script.sh
+      
