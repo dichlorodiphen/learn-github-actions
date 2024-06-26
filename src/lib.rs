@@ -2,6 +2,10 @@ pub fn increment(x: i32) -> i32 {
     x + 1
 }
 
+pub fn decrement(x: i32) -> i32 {
+    x - 1
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -9,5 +13,9 @@ mod tests {
     #[test]
     fn increment_works() {
         assert_eq!(2, increment(1));
+    }
+
+    #[test]
+    fn decrement_untested() {
     }
 }
