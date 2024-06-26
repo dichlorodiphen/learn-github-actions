@@ -16,6 +16,5 @@ mod tests {
     }
 
     #[test]
-    fn decrement_untested() {
-    }
+    fn decrement_untested() {}
 }
