@@ -16,5 +16,7 @@ mod tests {
     }
 
     #[test]
-    fn decrement_untested() {}
+    fn decrement_works() {
+        assert_eq!(1, decrement(2));
+    }
 }
